@@ -1,0 +1,42 @@
+纽约出租车行程时间预测模型 - 模型摘要
+============================================================
+
+模型类型: 全连接神经网络 (MLPRegressor)
+隐藏层结构: (512, 256, 128)
+激活函数: ReLU
+优化器: Adam
+正则化参数 (alpha): 0.001
+
+总样本数: 30000
+训练集大小: 21000 样本
+验证集大小: 4500 样本
+测试集大小: 4500 样本
+
+评估指标:
+  测试集 MAE: 21.38 分钟
+  测试集 RMSE: 24.79 分钟
+  测试集 R²: -0.0226
+
+使用的特征:
+  数值特征 (15个):
+    - Passenger_count
+    - Trip_distance
+    - straight_distance_km
+    - Fare_amount
+    - Extra
+    - MTA_tax
+    - Tip_amount
+    - Tolls_amount
+    - Total_amount
+    - pickup_hour
+    - pickup_dayofweek
+    - pickup_day
+    - fare_per_mile
+    - tip_ratio
+    - distance_efficiency
+
+  类别特征 (4个):
+    - Payment_type
+    - RateCodeID
+    - Store_and_fwd_flag
+    - Trip_type
